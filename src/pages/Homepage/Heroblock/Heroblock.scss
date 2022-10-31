@@ -1,0 +1,18 @@
+.heroBlock{
+    position: relative;
+    .heroMessage{
+        @media (min-width: 768px){
+            position: absolute;
+            z-index: 1;
+            background: white;
+            width: 60vw;
+            height: 60%;
+            top: 10vw;
+            right: 10vw;
+            padding-left: 2%;
+        }
+        @media (min-width: 992px){
+            width: 40vw;
+        }
+    }
+}

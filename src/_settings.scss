@@ -1,0 +1,28 @@
+//COLORS
+
+$dark-primary: #2A254B;
+$primary: #4E4D93;
+$light-grey: #F9F9F9;
+$border-grey: #EBE8F4;
+$border-dark: #CAC6DA;
+
+
+
+//FONT STYLES
+
+body{
+    font-family: 'Satoshi', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 576px) {
+    html{
+        // font-size: 3.5vw;
+    }
+}
+
+// @import '~bootstrap/scss/bootstrap.scss';
