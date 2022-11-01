@@ -1,0 +1,12 @@
+.listings{
+    .row{
+        .card{
+            @media (max-width: 767px){
+                width: 48%;
+            }
+            @media (min-width: 992px){
+                width: 24%;
+            }
+        }
+    }
+}

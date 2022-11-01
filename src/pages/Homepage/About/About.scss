@@ -1,0 +1,41 @@
+@import "../../../variables.scss";
+
+.about{
+    .row{
+        .textBlock{
+            background-color: $dark-primary;
+            .textBlock__button{
+                background-color: $primary;
+                width: 100%;
+                @media (min-width: 991px){
+                    width: 40%;
+                }
+            }
+
+            @media (min-width: 1199px){
+                height: auto;
+                width: 49%;
+            }
+            
+        }
+        .imageBlock{
+            overflow: hidden;
+            img{
+                align-self: center;
+                min-width: 100%;
+            }
+            @media (min-width: 767px){
+                height: 50vh;
+                img{
+                    min-width: auto;
+                    min-height: auto;
+                    object-fit: contain;
+                }
+            }
+            @media (min-width: 1199px){
+                height: auto;
+                width: 49%;
+            }
+        }
+    }
+}
