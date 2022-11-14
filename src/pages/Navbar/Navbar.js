@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { Link } from "react-router-dom";
 import './Navbar.scss'
 const searchIcon = require("./Search.png"),
 cartIcon = require("./Cart.png"),
@@ -11,7 +11,7 @@ function NavMenu(){
             <nav className='navbar navbar-expand-md navigation'>
                 <div className='container-fluid'>
 
-                    <a className='navbar-brand navigation__logo text-center ms-2' href='#'>Avion</a>
+                    <Link className='navbar-brand navigation__logo text-center ms-2' to="/">Avion</Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -22,11 +22,11 @@ function NavMenu(){
                         <ul className='navbar-nav flex-fill justify-content-center menu'>
 
                             <li className="nav-item menu__item">
-                                <a className='nav-link active' aria-current="page" href='#'>Home</a>
+                                <Link className='nav-link' to="/">Home</Link>
                             </li>
 
                             <li className="nav-item menu__item">
-                                <a className='nav-link' href='#'>Products</a>
+                                <Link className='nav-link' to="/products">Products</Link>
                             </li>
 
                             <li className="nav-item dropdown menu__item">
@@ -40,7 +40,7 @@ function NavMenu(){
                             </li>
 
                             <li className="nav-item menu__item">
-                                <a className='nav-link' href="#">Cart</a>
+                                <Link className='nav-link' to="#" title='in progress...'>Cart</Link>
                             </li>
 
                         </ul>

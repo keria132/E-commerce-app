@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.product-description-quantity__input{
+    @media(min-width: 768px){
+        width: 30%;
+    }
+}
+
+.product-description-quantity__button{
+    background-color: $dark-primary;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./About.scss"
 const image = require("./Image.png")
 
@@ -14,7 +15,9 @@ function About(){
                             A global brand with local beginnings, our story begain in a small studio in South London in early 2014
                         </p>
                     </div>
-                    <button className='textBlock__button text-white border-0 pt-3 pb-3'>View collection</button>
+                    <button className='textBlock__button text-white border-0 pt-3 pb-3'>
+                        <Link className='nav-link' to="/products">View collection</Link>
+                    </button>
                 </div>
 
                 <div className='imageBlock col-12 col-md-6 p-0 d-flex justify-content-center'>

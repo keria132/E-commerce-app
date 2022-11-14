@@ -1,0 +1,12 @@
+@import "../../variables";
+
+.footer{
+    background-color: $dark-primary;
+
+    .form-email__input{
+        background-color: $primary;
+        &::placeholder{
+            color: white;
+        }
+    }
+}

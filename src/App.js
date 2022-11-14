@@ -1,15 +1,23 @@
 import React from 'react';
-import Navbar from "./pages/Navbar/Navbar"
+import { HashRouter , BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
 import Homepage from './pages/Homepage/Homepage';
-
-// const primaryColor = "#4E4D93";
+import Products from './pages/Products/Products';
+import Product from './pages/Product/Product'
+import NoPage from './pages/NoPage/NoPage';
 
 function App(){
     return(
-        <>
-            <Navbar/>
-            <Homepage/>
-        </>
+        <HashRouter>
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<Homepage />} />
+                    <Route path="products" element={<Products />} />
+                    <Route path="/product/:productId" element={<Product />} />
+                    <Route path="*" element={<NoPage />} />
+                </Route>
+            </Routes>
+        </HashRouter>
     )
 }
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import "./Features.scss"
-const delivery = require("./Delivery.png");
-const checkmark = require("./Checkmark.png");
-const purchase = require("./Purchase.png");
-const sprout = require("./Sprout.png");
+const delivery = require("./Delivery.png"),
+checkmark = require("./Checkmark.png"),
+purchase = require("./Purchase.png"),
+sprout = require("./Sprout.png");
 
 function Features(){
     return(

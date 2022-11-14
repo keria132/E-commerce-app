@@ -1,0 +1,17 @@
+
+.products{
+    .header{
+        background-image: url("./headerBackground.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .listing{
+        .card{
+            @media (min-width: 992px){
+                width: 24%;
+            }
+        }
+    }
+}
